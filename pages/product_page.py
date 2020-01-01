@@ -17,7 +17,6 @@ class ProductPage(BasePage):
         button = self.browser.find_element(*ProductPageLocators.ADD_BASKET)
         button.click()
 
-
     def find_basket_name_product(self):
         bs_name = self.browser.find_element(*ProductPageLocators.BASKET_NAME_PRODUCT).text
         return bs_name
